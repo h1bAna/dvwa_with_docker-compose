@@ -10,7 +10,7 @@ services:
         links:
             - db
         depends_on:
-            -db
+            - db
     db:
         image: mysql
         container_name: db
