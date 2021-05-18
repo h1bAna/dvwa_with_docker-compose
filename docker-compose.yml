@@ -9,6 +9,8 @@ services:
             - ./dvwa:/var/www/html/
         links:
             - db
+        depends_on:
+            -db
     db:
         image: mysql
         container_name: db
