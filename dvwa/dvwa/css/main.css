@@ -116,10 +116,9 @@ div#container {
 }
 
 div#header {
-	padding: 10px;
 	overflow: hidden;
 	background: #2f2f2f;
-	border-bottom: 5px solid #A1CC33;
+	border-bottom: 5px solid #1f56bb;
 	text-align: center;
 }
 

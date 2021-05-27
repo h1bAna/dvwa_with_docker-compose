@@ -40,7 +40,7 @@ $page[ 'body' ] .= "
 
 		<form name=\"ping\" action=\"#\" method=\"post\">
 			<p>
-				Enter an IP address:
+				Nhập địa chỉ IP:
 				<input type=\"text\" name=\"ip\" size=\"30\">
 				<input type=\"submit\" name=\"Submit\" value=\"Submit\">
 			</p>\n";
@@ -53,7 +53,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'http://www.scribd.com/doc/2530476/Php-Endangers-Remote-Code-Execution' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'http://www.ss64.com/bash/' ) . "</li>

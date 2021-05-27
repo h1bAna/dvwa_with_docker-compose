@@ -12,6 +12,7 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 	else {
 		// *nix
 		$cmd = shell_exec( 'ping  -c 4 ' . $target );
+		
 	}
 
 	// Feedback for the end user

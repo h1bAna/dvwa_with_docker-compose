@@ -45,23 +45,23 @@ if( $DBMS == 'MySQL' ) {
 
 $page[ 'body' ] .= "
 <div class=\"body_padded\">
-	<h1>Database Setup <img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/spanner.png\" /></h1>
+	<h1>Cài Đặt database <img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/spanner.png\" /></h1>
 
-	<p>Click on the 'Create / Reset Database' button below to create or reset your database.<br />
-	If you get an error make sure you have the correct user credentials in: <em>" . realpath(  getcwd() . DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "config.inc.php" ) . "</em></p>
+	<p>Click nút 'Create / Reset Database' bên dưới để tạo hoặc reset lại database.<br />
+	Nếu bạn gặp lỗi, hãy chắc chắn rằng username và password chính xác trong file: <em>" . realpath(  getcwd() . DIRECTORY_SEPARATOR . "config" . DIRECTORY_SEPARATOR . "config.inc.php" ) . "</em></p>
 
-	<p>If the database already exists, <em>it will be cleared and the data will be reset</em>.<br />
-	You can also use this to reset the administrator credentials (\"<em>admin</em> // <em>password</em>\") at any stage.</p>
+	<p>Nếu database đã tồn tại , <em>nó sẽ bị xóa hết data cũ và reset </em>.<br />
+	Bạn có thể sử dụng thông tin đăng nhập này (\"<em>admin</em> // <em>password</em>\") ở bất kì module nào.</p>
 	<hr />
 	<br />
 
-	<h2>Setup Check</h2>
+	<h2>Kiểm Tra Cài Đặt</h2>
 
 	{$SERVER_NAME}<br />
 	<br />
 	{$DVWAOS}<br />
 	<br />
-	PHP version: <em>" . phpversion() . "</em><br />
+	Phiên bản PHP: <em>" . phpversion() . "</em><br />
 	{$phpDisplayErrors}<br />
 	{$phpSafeMode}<br/ >
 	{$phpURLInclude}<br/ >
@@ -88,10 +88,10 @@ $page[ 'body' ] .= "
 	<br />
 	<i><span class=\"failure\">Status in red</span>, indicate there will be an issue when trying to complete some modules.</i><br />
 	<br />
-	If you see disabled on either <i>allow_url_fopen</i> or <i>allow_url_include</i>, set the following in your php.ini file and restart Apache.<br />
+	Nếu bạn thấy <i> allow_url_fopen </i> hoặc <i> allow_url_include </i> bị tắt, hãy cài đặt lại trong tệp php.ini của bạn và khởi động lại Apache. <br />
 	<pre><code>allow_url_fopen = On
 allow_url_include = On</code></pre>
-	These are only required for the file inclusion labs so unless you want to play with those, you can ignore them.
+	Chúng chỉ bắt buộc đối với các lab file inclusion, vì vậy trừ khi bạn muốn dùng những lab đó, nếu không bạn có thể bỏ qua chúng.
 
 	<br /><br /><br />
 

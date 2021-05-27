@@ -80,7 +80,7 @@ echo "<!DOCTYPE html>
 
 	<br />
 
-	<p><img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/login_logo.png\" /></p>
+	<p><img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/logo_kma.png\" /></p>
 
 	<br />
 
@@ -92,14 +92,14 @@ echo "<!DOCTYPE html>
 
 	<fieldset>
 
-			<label for=\"user\">Username</label> <input type=\"text\" class=\"loginInput\" size=\"20\" name=\"username\"><br />
+			<label for=\"user\">Tên đăng nhập</label> <input type=\"text\" class=\"loginInput\" size=\"20\" name=\"username\"><br />
 
 
-			<label for=\"pass\">Password</label> <input type=\"password\" class=\"loginInput\" AUTOCOMPLETE=\"off\" size=\"20\" name=\"password\"><br />
+			<label for=\"pass\">Mật khẩu</label> <input type=\"password\" class=\"loginInput\" AUTOCOMPLETE=\"off\" size=\"20\" name=\"password\"><br />
 
 			<br />
 
-			<p class=\"submit\"><input type=\"submit\" value=\"Login\" name=\"Login\"></p>
+			<p class=\"submit\"><input type=\"submit\" value=\"Đăng nhập\" name=\"Login\"></p>
 
 	</fieldset>
 
@@ -124,7 +124,7 @@ echo "<!DOCTYPE html>
 	</div > <!--<div id=\"content\">-->
 
 	<div id=\"footer\">
-
+    <p style=\"font-size:13px;\" >Trang web này được mod lại từ source code của dvwa!</p>
 	<p>" . dvwaExternalLinkUrlGet( 'https://github.com/digininja/DVWA/', 'Damn Vulnerable Web Application (DVWA)' ) . "</p>
 
 	</div> <!--<div id=\"footer\"> -->

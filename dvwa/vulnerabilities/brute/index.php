@@ -37,15 +37,15 @@ $page[ 'body' ] .= "
 	<h1>Vulnerability: Brute Force</h1>
 
 	<div class=\"vulnerable_code_area\">
-		<h2>Login</h2>
+		<h2>ĐĂNG NHẬP</h2>
 
 		<form action=\"#\" method=\"{$method}\">
-			Username:<br />
+			Tên đăng nhập:<br />
 			<input type=\"text\" name=\"username\"><br />
-			Password:<br />
+			Mật khẩu:<br />
 			<input type=\"password\" AUTOCOMPLETE=\"off\" name=\"password\"><br />
 			<br />
-			<input type=\"submit\" value=\"Login\" name=\"Login\">\n";
+			<input type=\"submit\" value=\"Đăng nhập\" name=\"Login\">\n";
 
 if( $vulnerabilityFile == 'high.php' || $vulnerabilityFile == 'impossible.php' )
 	$page[ 'body' ] .= "			" . tokenField();
@@ -55,7 +55,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/attacks/Brute_force_attack' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'http://www.symantec.com/connect/articles/password-crackers-ensuring-security-your-password' ) . "</li>

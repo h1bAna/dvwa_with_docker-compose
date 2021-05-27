@@ -18,12 +18,12 @@ if( isset( $_GET[ 'Login' ] ) ) {
 		$avatar = $row["avatar"];
 
 		// Login successful
-		$html .= "<p>Welcome to the password protected area {$user}</p>";
+		$html .= "<p>Đăng nhập thành công {$user}</p>";
 		$html .= "<img src=\"{$avatar}\" />";
 	}
 	else {
 		// Login failed
-		$html .= "<pre><br />Username and/or password incorrect.</pre>";
+		$html .= "<pre><br />Tên đăng nhập và/hoặc mật khẩu không đúng.</pre>";
 	}
 
 	((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);

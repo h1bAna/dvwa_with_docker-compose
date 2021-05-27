@@ -12,29 +12,29 @@ $page[ 'page_id' ] = 'home';
 $page[ 'body' ] .= "
 <div class=\"body_padded\">
 	<h1>Welcome to Damn Vulnerable Web Application!</h1>
-	<p>Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.</p>
-	<p>The aim of DVWA is to <em>practice some of the most common web vulnerabilities</em>, with <em>various levels of difficultly</em>, with a simple straightforward interface.</p>
+	<p>Damn Vulnerable Web Application (DVWA) là một ứng dụng mã nguồn PHP/MySQL tập hợp sẵn các lỗi logic về bảo mật ứng dụng web trong mã nguồn PHP. Mục tiêu chính của nó là hỗ trợ các chuyên gia bảo mật kiểm tra kỹ năng và công cụ của họ trong môi trường pháp lý, giúp các nhà phát triển web hiểu rõ hơn về quy trình bảo mật ứng dụng web và để hỗ trợ cả học sinh và giáo viên tìm hiểu về bảo mật ứng dụng web trong môi trường phòng học được kiểm soát.</p>
+	<p>Mục đích của DVWA là <em>thực hành một số lỗ hổng web phổ biến nhất</em>, ở <em>nhiều mức độ khó khác nhau</em>, với giao diện đơn giản dễ hiểu.</p>
 	<hr />
 	<br />
 
-	<h2>General Instructions</h2>
-	<p>It is up to the user how they approach DVWA. Either by working through every module at a fixed level, or selecting any module and working up to reach the highest level they can before moving onto the next one. There is not a fixed object to complete a module; however users should feel that they have successfully exploited the system as best as they possible could by using that particular vulnerability.</p>
-	<p>Please note, there are <em>both documented and undocumented vulnerability</em> with this software. This is intentional. You are encouraged to try and discover as many issues as possible.</p>
-	<p>DVWA also includes a Web Application Firewall (WAF), PHPIDS, which can be enabled at any stage to further increase the difficulty. This will demonstrate how adding another layer of security may block certain malicious actions. Note, there are also various public methods at bypassing these protections (so this can be seen as an extension for more advanced users)!</p>
-	<p>There is a help button at the bottom of each page, which allows you to view hints & tips for that vulnerability. There are also additional links for further background reading, which relates to that security issue.</p>
+	<h2>Hướng Dẫn Chung</h2>
+	<p>Cách họ tiếp cận DVWA tùy thuộc vào người dùng. Bằng cách làm việc qua mọi mô-đun ở mức cố định hoặc chọn bất kỳ mô-đun nào và làm việc để đạt đến mức cao nhất mà họ có thể trước khi chuyển sang phần tiếp theo. Không có đối tượng cố định để hoàn thành một mô-đun; tuy nhiên người dùng nên cảm thấy rằng họ đã khai thác thành công hệ thống tốt nhất có thể bằng cách sử dụng lỗ hổng cụ thể đó.</p>
+	<p>Xin lưu ý rằng phần mềm này có cả lỗ hổng <em>được lập thành tài liệu và không có tài liệu</em>. Điều này là cố ý. Bạn nên thử và khám phá càng nhiều vấn đề càng tốt.</p>
+	<p>DVWA cũng bao gồm Web Application Firewall (WAF), PHPIDS, có thể được bật ở bất kỳ module nào để tăng thêm độ khó. Điều này sẽ chứng minh cách thêm một lớp bảo mật khác có thể chặn một số hành động độc hại. Lưu ý, cũng có nhiều phương pháp công khai khác nhau trong việc bypass các biện pháp bảo vệ này (vì vậy đây có thể được coi là một phần mở rộng cho những người dùng nâng cao hơn)!</p>
+	<p>Có một nút trợ giúp ở cuối mỗi trang, cho phép bạn xem các gợi ý và mẹo cho lỗ hổng đó. Ngoài ra còn có các liên kết bổ sung để đọc thêm thông tin cơ bản liên quan đến vấn đề bảo mật đó.</p>
 	<hr />
 	<br />
 
-	<h2>WARNING!</h2>
-	<p>Damn Vulnerable Web Application is damn vulnerable! <em>Do not upload it to your hosting provider's public html folder or any Internet facing servers</em>, as they will be compromised. It is recommend using a virtual machine (such as " . dvwaExternalLinkUrlGet( 'https://www.virtualbox.org/','VirtualBox' ) . " or " . dvwaExternalLinkUrlGet( 'https://www.vmware.com/','VMware' ) . "), which is set to NAT networking mode. Inside a guest machine, you can download and install " . dvwaExternalLinkUrlGet( 'https://www.apachefriends.org/en/xampp.html','XAMPP' ) . " for the web server and database.</p>
+	<h2>CẢNH BÁO!</h2>
+	<p>Damn Vulnerable Web Application rất dễ bị tấn công! <em>Không tải nó lên thư mục html của nhà cung cấp dịch vụ lưu trữ của bạn hoặc bất kỳ máy chủ nào có Internet</em>, vì chúng sẽ bị khai thác. Bạn nên sử dụng máy ảo (chẳng hạn như " . dvwaExternalLinkUrlGet( 'https://www.virtualbox.org/','VirtualBox' ) . " hoặc " . dvwaExternalLinkUrlGet( 'https://www.vmware.com/','VMware' ) . "), dược đặt thành Chế độ mạng NAT. Bên trong máy khách, bạn có thể tải xuống và cài đặt" . dvwaExternalLinkUrlGet( 'https://www.apachefriends.org/en/xampp.html','XAMPP' ) . " cho máy chủ web và cơ sở dữ liệu.</p>
 	<br />
-	<h3>Disclaimer</h3>
-	<p>We do not take responsibility for the way in which any one uses this application (DVWA). We have made the purposes of the application clear and it should not be used maliciously. We have given warnings and taken measures to prevent users from installing DVWA on to live web servers. If your web server is compromised via an installation of DVWA it is not our responsibility it is the responsibility of the person/s who uploaded and installed it.</p>
+	<h3>Tuyên bố từ chối trách nhiệm</h3>
+	<p>Chúng tôi không chịu trách nhiệm về cách thức mà bất kỳ ai sử dụng ứng dụng này (DVWA). Chúng tôi đã làm cho các mục đích của ứng dụng rõ ràng và nó không được sử dụng với mục đích xấu. Chúng tôi đã đưa ra các cảnh báo và thực hiện các biện pháp để ngăn người dùng cài đặt DVWA vào các máy chủ web trực tiếp. Nếu máy chủ web của bạn bị xâm phạm thông qua cài đặt DVWA, chúng tôi không chịu trách nhiệm mà là trách nhiệm của người đã tải lên và cài đặt nó.</p>
 	<hr />
 	<br />
 
-	<h2>More Training Resources</h2>
-	<p>DVWA aims to cover the most commonly seen vulnerabilities found in today's web applications. However there are plenty of other issues with web applications. Should you wish to explore any additional attack vectors, or want more difficult challenges, you may wish to look into the following other projects:</p>
+	<h2>Tìm Hiểu Thêm</h2>
+	<p>DVWA nhằm mục đích che phủ các lỗ hổng thường thấy nhất được tìm thấy trong các ứng dụng web hiện nay. Tuy nhiên, có rất nhiều vấn đề khác với các ứng dụng web. Nếu bạn muốn khám phá bất kỳ vectơ tấn công bổ sung nào hoặc muốn có nhiều thử thách khó khăn hơn, bạn có thể muốn xem xét các dự án khác sau:</p>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://github.com/webpwnized/mutillidae', 'Mutillidae') . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project', 'OWASP Broken Web Applications Project

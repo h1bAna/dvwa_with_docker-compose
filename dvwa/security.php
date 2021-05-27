@@ -56,7 +56,7 @@ foreach( array( 'low', 'medium', 'high', 'impossible' ) as $securityLevel ) {
 	$selected = '';
 	if( $securityLevel == dvwaSecurityLevelGet() ) {
 		$selected = ' selected="selected"';
-		$securityLevelHtml = "<p>Security level is currently: <em>$securityLevel</em>.<p>";
+		$securityLevelHtml = "<p>Security level hiện tại: <em>$securityLevel</em>.<p>";
 	}
 	$securityOptionsHtml .= "<option value=\"{$securityLevel}\"{$selected}>" . ucfirst($securityLevel) . "</option>";
 }
@@ -92,13 +92,13 @@ $page[ 'body' ] .= "
 
 	<form action=\"#\" method=\"POST\">
 		{$securityLevelHtml}
-		<p>You can set the security level to low, medium, high or impossible. The security level changes the vulnerability level of DVWA:</p>
+		<p>Bạn có thể đặt security level ở mức low, medium, high hoặc impossible. Security level thay đổi độ khó của việc khai thác những lỗ hổng:</p>
 		<ol>
-			<li> Low - This security level is completely vulnerable and <em>has no security measures at all</em>. It's use is to be as an example of how web application vulnerabilities manifest through bad coding practices and to serve as a platform to teach or learn basic exploitation techniques.</li>
-			<li> Medium - This setting is mainly to give an example to the user of <em>bad security practices</em>, where the developer has tried but failed to secure an application. It also acts as a challenge to users to refine their exploitation techniques.</li>
-			<li> High - This option is an extension to the medium difficulty, with a mixture of <em>harder or alternative bad practices</em> to attempt to secure the code. The vulnerability may not allow the same extent of the exploitation, similar in various Capture The Flags (CTFs) competitions.</li>
-			<li> Impossible - This level should be <em>secure against all vulnerabilities</em>. It is used to compare the vulnerable source code to the secure source code.<br />
-				Prior to DVWA v1.9, this level was known as 'high'.</li>
+			<li> Low - Cấp độ bảo mật này hoàn toàn dễ bị tấn công và <em> không có biện pháp bảo mật nào </em>. Nó được sử dụng như một ví dụ về cách các lỗ hổng ứng dụng web biểu hiện thông qua các đoạn code xấu và dùng làm nền tảng để dạy hoặc học cơ bản kỹ thuật khai thác.</li>
+			<li> Medium - Cài đặt này chủ yếu là để đưa ra ví dụ cho người dùng về <em> các phương pháp bảo mật không tốt </em>, trong đó nhà phát triển đã cố gắng nhưng không bảo mật được ứng dụng. Nó cũng hoạt động như một thách thức đối với người dùng để tinh chỉnh các kỹ thuật khai thác của họ.</li>
+			<li> High - Tùy chọn này là một phần mở rộng cho độ khó trung bình, với sự kết hợp của <em> các phương pháp khó hơn hoặc thay thế những đoạn code xấu </em> bằng những đoạn code \"đẹp\". Lỗ hổng bảo mật có thể không cho phép mức độ khai thác như nhau, tương tự trong các cuộc thi Capture The Flags (CTFs)  .</li>
+			<li> Impossible - Cấp độ này phải được <em> bảo mật trước tất cả các lỗ hổng bảo mật </em>. Nó được sử dụng để so sánh mã nguồn dễ bị tấn công với mã nguồn an toàn.<br />
+				Trước phiên bản DVWA v1.9, cấp độ này được gọi là 'cao'.</li>
 		</ol>
 		<select name=\"security\">
 			{$securityOptionsHtml}
@@ -113,9 +113,9 @@ $page[ 'body' ] .= "
 
 	<h2>PHPIDS</h2>
 	{$WarningHtml}
-	<p>" . dvwaExternalLinkUrlGet( 'https://github.com/PHPIDS/PHPIDS', 'PHPIDS' ) . " v" . dvwaPhpIdsVersionGet() . " (PHP-Intrusion Detection System) is a security layer for PHP based web applications.</p>
-	<p>PHPIDS works by filtering any user supplied input against a blacklist of potentially malicious code. It is used in DVWA to serve as a live example of how Web Application Firewalls (WAFs) can help improve security and in some cases how WAFs can be circumvented.</p>
-	<p>You can enable PHPIDS across this site for the duration of your session.</p>
+	<p>" . dvwaExternalLinkUrlGet( 'https://github.com/PHPIDS/PHPIDS', 'PHPIDS' ) . " v" . dvwaPhpIdsVersionGet() . " (PHP-Intrusion Detection System) một lớp bảo mật cho các ứng dụng web dựa trên PHP.</p>
+	<p>PHPIDS hoạt động bằng cách lọc bất kỳ dữ liệu đầu vào nào do người dùng cung cấp có trong danh sách đen chứa mã độc hại tiềm ẩn. Nó được sử dụng trong DVWA để làm ví dụ trực tiếp về cách Tường lửa ứng dụng web (WAF) có thể giúp cải thiện bảo mật và trong một số trường hợp, WAF có thể bị vượt qua.</p>
+    <p> Bạn có thể bật PHPIDS trên trang web này trong suốt phiên của mình.</p>
 
 	<p>{$phpIdsHtml}</p>
 	[<a href=\"?test=%22><script>eval(window.name)</script>\">Simulate attack</a>] -
