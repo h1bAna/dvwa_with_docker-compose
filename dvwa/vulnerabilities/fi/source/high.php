@@ -6,7 +6,7 @@ $file = $_GET[ 'page' ];
 // Input validation
 if( !fnmatch( "file*", $file ) && $file != "include.php" ) {
 	// This isn't the page we want!
-	echo "ERROR: File not found!";
+	echo "ERROR: Không tìm thấy!";
 	exit;
 }
 

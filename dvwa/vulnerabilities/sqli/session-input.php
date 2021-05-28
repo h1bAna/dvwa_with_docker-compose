@@ -18,12 +18,12 @@ if( isset( $_POST[ 'id' ] ) ) {
 $page[ 'body' ] .= "
 <form action=\"#\" method=\"POST\">
 	<input type=\"text\" size=\"15\" name=\"id\">
-	<input type=\"submit\" name=\"Submit\" value=\"Submit\">
+	<input type=\"submit\" name=\"Submit\" value=\"Xác nhận\">
 </form>
 <hr />
 <br />
 
-<button onclick=\"self.close();\">Close</button>";
+<button onclick=\"self.close();\">Đóng</button>";
 
 dvwaSourceHtmlEcho( $page );
 

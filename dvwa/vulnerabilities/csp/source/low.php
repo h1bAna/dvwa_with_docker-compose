@@ -17,7 +17,7 @@ $page[ 'body' ] .= "
 }
 $page[ 'body' ] .= '
 <form name="csp" method="POST">
-	<p>You can include scripts from external sources, examine the Content Security Policy and enter a URL to include here:</p>
+	<p>Bạn có thể bao gồm các tập lệnh từ các nguồn bên ngoài, kiểm tra Chính sách bảo mật nội dung và nhập URL để đưa vào đây:</p>
 	<input size="50" type="text" name="include" value="" id="include" />
 	<input type="submit" value="Include" />
 </form>

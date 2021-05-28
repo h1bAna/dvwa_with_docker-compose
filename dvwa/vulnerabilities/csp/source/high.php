@@ -12,9 +12,9 @@ $page[ 'body' ] .= "
 }
 $page[ 'body' ] .= '
 <form name="csp" method="POST">
-	<p>The page makes a call to ' . DVWA_WEB_PAGE_TO_ROOT . '/vulnerabilities/csp/source/jsonp.php to load some code. Modify that page to run your own code.</p>
+	<p>Trang sẽ tải đoạn code từ' . DVWA_WEB_PAGE_TO_ROOT . '/vulnerabilities/csp/source/jsonp.php. Chỉnh sửa trang đó để chạy code của bạn.</p>
 	<p>1+2+3+4+5=<span id="answer"></span></p>
-	<input type="button" id="solve" value="Solve the sum" />
+	<input type="button" id="solve" value="Tính" />
 </form>
 
 <script src="source/high.js"></script>

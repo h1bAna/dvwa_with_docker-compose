@@ -18,7 +18,7 @@ $page[ 'body' ] .= "
 }
 $page[ 'body' ] .= '
 <form name="csp" method="POST">
-	<p>Whatever you enter here gets dropped directly into the page, see if you can get an alert box to pop up.</p>
+	<p>Bất cứ điều gì bạn nhập ở đây sẽ được đưa trực tiếp vào trang, hãy xem liệu bạn có thể nhận được hộp cảnh báo bật lên hay không.</p>
 	<input size="50" type="text" name="include" value="" id="include" />
 	<input type="submit" value="Include" />
 </form>

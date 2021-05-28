@@ -43,21 +43,21 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					if ($token == md5(str_rot13("success"))) {
 						$message = "<p style='color:red'>Well done!</p>";
 					} else {
-						$message = "<p>Invalid token.</p>";
+						$message = "<p style='color:red'>Invalid token.</p>";
 					}
 					break;
 				case 'medium':
 					if ($token == strrev("XXsuccessXX")) {
 						$message = "<p style='color:red'>Well done!</p>";
 					} else {
-						$message = "<p>Invalid token.</p>";
+						$message = "<p style='color:red'>Invalid token.</p>";
 					}
 					break;
 				case 'high':
 					if ($token == hash("sha256", hash("sha256", "XX" . strrev("success")) . "ZZ")) {
 						$message = "<p style='color:red'>Well done!</p>";
 					} else {
-						$message = "<p>Invalid token.</p>";
+						$message = "<p style='color:red'>Invalid token.</p>";
 					}
 					break;
 				default:
@@ -65,10 +65,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					break;
 			}
 		} else {
-			$message = "<p>You got the phrase wrong.</p>";
+			$message = "<p>Bạn đã nhập sai.</p>";
 		}
 	} else {
-		$message = "<p>Missing phrase or token.</p>";
+		$message = "<p>Chưa nhập hoặc thiếu token.</p>";
 	}
 }
 
@@ -79,7 +79,7 @@ $page[ 'body' ] = <<<EOF
 
 	<div class="vulnerable_code_area">
 	<p>
-		You can never trust anything that comes from the user or prevent them from messing with it and so there is no impossible level.
+		Module này không có imposssible level. Have Fun!
 	</p>
 EOF;
 } else {
@@ -89,15 +89,15 @@ $page[ 'body' ] = <<<EOF
 
 	<div class="vulnerable_code_area">
 	<p>
-		Submit the word "success" to win.
+		Nhập từ "success"
 	</p>
 
 	$message
 
 	<form name="low_js" method="post">
 		<input type="hidden" name="token" value="" id="token" />
-		<label for="phrase">Phrase</label> <input type="text" name="phrase" value="ChangeMe" id="phrase" />
-		<input type="submit" id="send" name="send" value="Submit" />
+		<label for="phrase">Phrase</label> <input type="text" name="phrase" value="Nhập vào đây" id="phrase" />
+		<input type="submit" id="send" name="send" value="Xác nhận" />
 	</form>
 EOF;
 }
@@ -109,13 +109,13 @@ $page[ 'body' ] .= <<<EOF
 EOF;
 
 $page[ 'body' ] .= "
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://www.w3schools.com/js/' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://www.youtube.com/watch?v=cs7EQdWO5o0&index=17&list=WL' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://ponyfoo.com/articles/es6-proxies-in-depth' ) . "</li>
 	</ul>
-	<p><i>Module developed by <a href='https://twitter.com/digininja'>Digininja</a>.</i></p>
+	<p><i>Module được phát triên bởi <a href='https://twitter.com/digininja'>Digininja</a>.</i></p>
 </div>\n";
 
 dvwaHtmlEcho( $page );

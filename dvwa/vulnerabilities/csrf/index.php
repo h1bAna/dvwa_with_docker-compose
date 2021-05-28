@@ -32,7 +32,7 @@ switch( $_COOKIE[ 'security' ] ) {
 require_once DVWA_WEB_PAGE_TO_ROOT . "vulnerabilities/csrf/source/{$vulnerabilityFile}";
 
 $testCredentials = "
- <button onclick=\"testFunct()\">Test Credentials</button><br /><br />
+ <button onclick=\"testFunct()\">Kiểm tra</button><br /><br />
  <script>
 function testFunct() {
   window.open(\"" . DVWA_WEB_PAGE_TO_ROOT . "vulnerabilities/csrf/test_credentials.php\", \"_blank\", 
@@ -46,26 +46,26 @@ $page[ 'body' ] .= "
 	<h1>Vulnerability: Cross Site Request Forgery (CSRF)</h1>
 
 	<div class=\"vulnerable_code_area\">
-		<h3>Change your admin password:</h3>
+		<h3>Thay đổi mật khẩu admmin:</h3>
 		<br /> 
-		<div id=\"test_credentials\">
+		<div id=\"Kiểm tra thông tin đăng nhập\">
 			".$testCredentials ."
 		</div><br />
 		<form action=\"#\" method=\"GET\">";
 
 if( $vulnerabilityFile == 'impossible.php' ) {
 	$page[ 'body' ] .= "
-			Current password:<br />
+			Mật khẩu hiện tại:<br />
 			<input type=\"password\" AUTOCOMPLETE=\"off\" name=\"password_current\"><br />";
 }
 
 $page[ 'body' ] .= "
-			New password:<br />
+			Mật khẩu mới:<br />
 			<input type=\"password\" AUTOCOMPLETE=\"off\" name=\"password_new\"><br />
-			Confirm new password:<br />
+			Xác nhận lại mật khẩu mới:<br />
 			<input type=\"password\" AUTOCOMPLETE=\"off\" name=\"password_conf\"><br />
 			<br />
-			<input type=\"submit\" value=\"Change\" name=\"Change\">\n";
+			<input type=\"submit\" value=\"Đổi mật khẩu\" name=\"Change\">\n";
 
 if( $vulnerabilityFile == 'high.php' || $vulnerabilityFile == 'impossible.php' )
 	$page[ 'body' ] .= "			" . tokenField();
@@ -75,7 +75,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/attacks/csrf' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'http://www.cgisecurity.com/csrf-faq.html' ) . "</li>

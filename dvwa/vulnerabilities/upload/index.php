@@ -50,10 +50,10 @@ $page[ 'body' ] .= "
 	<div class=\"vulnerable_code_area\">
 		<form enctype=\"multipart/form-data\" action=\"#\" method=\"POST\">
 			<input type=\"hidden\" name=\"MAX_FILE_SIZE\" value=\"100000\" />
-			Choose an image to upload:<br /><br />
+			Chọn một ảnh để tải lên:<br /><br />
 			<input name=\"uploaded\" type=\"file\" /><br />
 			<br />
-			<input type=\"submit\" name=\"Upload\" value=\"Upload\" />\n";
+			<input type=\"submit\" name=\"Upload\" value=\"Tải lên\" />\n";
 
 if( $vulnerabilityFile == 'impossible.php' )
 	$page[ 'body' ] .= "			" . tokenField();
@@ -63,7 +63,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://www.owasp.org/index.php/Unrestricted_File_Upload' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://www.acunetix.com/websitesecurity/upload-forms-threat/' ) . "</li>

@@ -43,7 +43,7 @@ $page[ 'body' ] = <<<EOF
 
 	<div class="vulnerable_code_area">
  
- 		<p>Please choose a language:</p>
+ 		<p>Hãy chọn ngôn ngữ:</p>
 
 		<form name="XSS" method="GET">
 			<select name="default">
@@ -60,13 +60,13 @@ $page[ 'body' ] = <<<EOF
 					document.write("<option value='German'>German</option>");
 				</script>
 			</select>
-			<input type="submit" value="Select" />
+			<input type="submit" value="Chọn" />
 		</form>
 	</div>
 EOF;
 
 $page[ 'body' ] .= "
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/attacks/xss/' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/attacks/DOM_Based_XSS' ) . "</li>

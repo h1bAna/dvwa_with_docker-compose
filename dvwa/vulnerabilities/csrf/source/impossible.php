@@ -34,11 +34,11 @@ if( isset( $_GET[ 'Change' ] ) ) {
 		$data->execute();
 
 		// Feedback for the user
-		$html .= "<pre>Password Changed.</pre>";
+		$html .= "<pre>Mật khẩu đã được thay đổi.</pre>";
 	}
 	else {
 		// Issue with passwords matching
-		$html .= "<pre>Passwords did not match or current password incorrect.</pre>";
+		$html .= "<pre>Mật khẩu hiện tại không đúng.</pre>";
 	}
 }
 

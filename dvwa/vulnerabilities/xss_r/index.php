@@ -38,9 +38,9 @@ $page[ 'body' ] .= "
 	<div class=\"vulnerable_code_area\">
 		<form name=\"XSS\" action=\"#\" method=\"GET\">
 			<p>
-				What's your name?
+				Hãy điền tên của bạn?
 				<input type=\"text\" name=\"name\">
-				<input type=\"submit\" value=\"Submit\">
+				<input type=\"submit\" value=\"Xác nhận\">
 			</p>\n";
 
 if( $vulnerabilityFile == 'impossible.php' )
@@ -51,7 +51,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/attacks/xss/' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/xss-filter-evasion-cheatsheet' ) . "</li>

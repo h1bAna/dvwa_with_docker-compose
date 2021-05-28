@@ -12,14 +12,14 @@ if( isset( $_GET[ 'Submit' ] ) ) {
 	$num = @mysqli_num_rows( $result ); // The '@' character suppresses errors
 	if( $num > 0 ) {
 		// Feedback for end user
-		$html .= '<pre>User ID exists in the database.</pre>';
+		$html .= '<pre>Tồn tại ID trong database.</pre>';
 	}
 	else {
 		// User wasn't found, so the page wasn't!
 		header( $_SERVER[ 'SERVER_PROTOCOL' ] . ' 404 Not Found' );
 
 		// Feedback for end user
-		$html .= '<pre>User ID is MISSING from the database.</pre>';
+		$html .= '<pre>Không tìm thấy ID trong database.</pre>';
 	}
 
 	((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);

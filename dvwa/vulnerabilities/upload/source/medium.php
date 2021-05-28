@@ -17,16 +17,16 @@ if( isset( $_POST[ 'Upload' ] ) ) {
 		// Can we move the file to the upload folder?
 		if( !move_uploaded_file( $_FILES[ 'uploaded' ][ 'tmp_name' ], $target_path ) ) {
 			// No
-			$html .= '<pre>Your image was not uploaded.</pre>';
+			$html .= '<pre>Ảnh của bạn chưa được tải lên.</pre>';
 		}
 		else {
 			// Yes!
-			$html .= "<pre>{$target_path} succesfully uploaded!</pre>";
+			$html .= "<pre>{$target_path} Tải lên thành công!</pre>";
 		}
 	}
 	else {
 		// Invalid file
-		$html .= '<pre>Your image was not uploaded. We can only accept JPEG or PNG images.</pre>';
+		$html .= '<pre>Ảnh chưa được tải lên. Chỉ chấp nhận ảnh JPG và PNG.</pre>';
 	}
 }
 

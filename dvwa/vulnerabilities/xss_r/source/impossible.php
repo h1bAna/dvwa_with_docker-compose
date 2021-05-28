@@ -9,7 +9,7 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 	$name = htmlspecialchars( $_GET[ 'name' ] );
 
 	// Feedback for end user
-	$html .= "<pre>Hello ${name}</pre>";
+	$html .= "<pre>Chào ${name} anh đứng đây từ chiều</pre><img src=./source/hi.jpg>";
 }
 
 // Generate Anti-CSRF token

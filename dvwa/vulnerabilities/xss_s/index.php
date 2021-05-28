@@ -44,18 +44,18 @@ $page[ 'body' ] .= "
 		<form method=\"post\" name=\"guestform\" \">
 			<table width=\"550\" border=\"0\" cellpadding=\"2\" cellspacing=\"1\">
 				<tr>
-					<td width=\"100\">Name *</td>
+					<td width=\"100\">Tên *</td>
 					<td><input name=\"txtName\" type=\"text\" size=\"30\" maxlength=\"10\"></td>
 				</tr>
 				<tr>
-					<td width=\"100\">Message *</td>
+					<td width=\"100\">Lời nhắn *</td>
 					<td><textarea name=\"mtxMessage\" cols=\"50\" rows=\"3\" maxlength=\"50\"></textarea></td>
 				</tr>
 				<tr>
 					<td width=\"100\">&nbsp;</td>
 					<td>
-						<input name=\"btnSign\" type=\"submit\" value=\"Sign Guestbook\" onclick=\"return validateGuestbookForm(this.form);\" />
-						<input name=\"btnClear\" type=\"submit\" value=\"Clear Guestbook\" onClick=\"return confirmClearGuestbook();\" />
+						<input name=\"btnSign\" type=\"submit\" value=\"Tạo lưu bút\" onclick=\"return validateGuestbookForm(this.form);\" />
+						<input name=\"btnClear\" type=\"submit\" value=\"Xóa lưu bút\" onClick=\"return confirmClearGuestbook();\" />
 					</td>
 				</tr>
 			</table>\n";
@@ -72,7 +72,7 @@ $page[ 'body' ] .= "
 	" . dvwaGuestbook() . "
 	<br />
 
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/attacks/xss' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://owasp.org/www-community/xss-filter-evasion-cheatsheet' ) . "</li>

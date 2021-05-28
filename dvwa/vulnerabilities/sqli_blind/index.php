@@ -51,13 +51,13 @@ $page[ 'body' ] .= "
 
 	<div class=\"vulnerable_code_area\">";
 if( $vulnerabilityFile == 'high.php' ) {
-	$page[ 'body' ] .= "Click <a href=\"#\" onclick=\"javascript:popUp('cookie-input.php');return false;\">here to change your ID</a>.";
+	$page[ 'body' ] .= "Click <a href=\"#\" onclick=\"javascript:popUp('cookie-input.php');return false;\">vào đây để thay đổi ID của bạn </a>.";
 }
 else {
 	$page[ 'body' ] .= "
 		<form action=\"#\" method=\"{$method}\">
 			<p>
-				User ID:";
+                ID người dùng:";
 	if( $vulnerabilityFile == 'medium.php' ) {
 		$page[ 'body' ] .= "\n				<select name=\"id\">";
 		$query  = "SELECT COUNT(*) FROM users;";
@@ -70,7 +70,7 @@ else {
 	else
 		$page[ 'body' ] .= "\n				<input type=\"text\" size=\"15\" name=\"id\">";
 
-	$page[ 'body' ] .= "\n				<input type=\"submit\" name=\"Submit\" value=\"Submit\">
+	$page[ 'body' ] .= "\n				<input type=\"submit\" name=\"Submit\" value=\"Xác nhận\">
 			</p>\n";
 
 	if( $vulnerabilityFile == 'impossible.php' )
@@ -83,8 +83,8 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>More Information</h2>
-	<ul>
+	<h2>Tìm hiểu thêm</h2>
+	<ul>bạn
 		<li>" . dvwaExternalLinkUrlGet( 'http://www.securiteam.com/securityreviews/5DP0N1P76E.html' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://en.wikipedia.org/wiki/SQL_injection' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'http://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet' ) . "</li>

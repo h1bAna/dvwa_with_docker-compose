@@ -51,7 +51,7 @@ $page[ 'body' ] .= "
 
 	<div class=\"vulnerable_code_area\">";
 if( $vulnerabilityFile == 'high.php' ) {
-	$page[ 'body' ] .= "Click <a href=\"#\" onclick=\"javascript:popUp('session-input.php');return false;\">here to change your ID</a>.";
+	$page[ 'body' ] .= "Click <a href=\"#\" onclick=\"javascript:popUp('session-input.php');return false;\">vào đây để thay đổi ID của bạn</a>.";
 }
 else {
 	$page[ 'body' ] .= "
@@ -80,7 +80,7 @@ $page[ 'body' ] .= "
 		{$html}
 	</div>
 
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://www.securiteam.com/securityreviews/5DP0N1P76E.html' ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://en.wikipedia.org/wiki/SQL_injection' ) . "</li>

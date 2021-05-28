@@ -16,11 +16,11 @@ if( isset( $_GET[ 'Change' ] ) ) {
 		$result = mysqli_query($GLOBALS["___mysqli_ston"],  $insert ) or die( '<pre>' . ((is_object($GLOBALS["___mysqli_ston"])) ? mysqli_error($GLOBALS["___mysqli_ston"]) : (($___mysqli_res = mysqli_connect_error()) ? $___mysqli_res : false)) . '</pre>' );
 
 		// Feedback for the user
-		$html .= "<pre>Password Changed.</pre>";
+		$html .= "<pre>Mật khẩu đã được thay đổi.</pre>";
 	}
 	else {
 		// Issue with passwords matching
-		$html .= "<pre>Passwords did not match.</pre>";
+		$html .= "<pre>Mật khẩu không khớp.</pre>";
 	}
 
 	((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);

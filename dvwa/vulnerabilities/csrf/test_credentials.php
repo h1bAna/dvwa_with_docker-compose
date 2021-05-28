@@ -40,9 +40,9 @@ $page[ 'body' ] .= "
 				<form action=\"" . DVWA_WEB_PAGE_TO_ROOT . "vulnerabilities/csrf/test_credentials.php\" method=\"post\">
 					<fieldset>
 						" . $login_state . "
-						<label for=\"user\">Username</label><br /> <input type=\"text\" class=\"loginInput\" size=\"20\" name=\"username\"><br />
-						<label for=\"pass\">Password</label><br /> <input type=\"password\" class=\"loginInput\" AUTOCOMPLETE=\"off\" size=\"20\" name=\"password\"><br />
-						<p class=\"submit\"><input type=\"submit\" value=\"Login\" name=\"Login\"></p>
+						<label for=\"user\">Tên đăng nhập</label><br /> <input type=\"text\" class=\"loginInput\" size=\"20\" name=\"username\"><br />
+						<label for=\"pass\">Mật khẩu</label><br /> <input type=\"password\" class=\"loginInput\" AUTOCOMPLETE=\"off\" size=\"20\" name=\"password\"><br />
+						<p class=\"submit\"><input type=\"submit\" value=\"Đăng nhập\" name=\"Login\"></p>
 					</fieldset>
 				</form>
 				{$messagesHtml}

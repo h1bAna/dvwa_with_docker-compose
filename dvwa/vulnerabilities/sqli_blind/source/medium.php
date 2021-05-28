@@ -13,11 +13,11 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 	$num = @mysqli_num_rows( $result ); // The '@' character suppresses errors
 	if( $num > 0 ) {
 		// Feedback for end user
-		$html .= '<pre>User ID exists in the database.</pre>';
+		$html .= '<pre>Tồn tại ID trong database.</pre>';
 	}
 	else {
 		// Feedback for end user
-		$html .= '<pre>User ID is MISSING from the database.</pre>';
+		$html .= '<pre>Không tìm thấy ID trong database.</pre>';
 	}
 
 	//mysql_close();

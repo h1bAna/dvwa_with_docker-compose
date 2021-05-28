@@ -37,10 +37,10 @@ $page[ 'body' ] .= <<<EOF
 <div class="body_padded">
 	<h1>Vulnerability: Weak Session IDs</h1>
 	<p>
-		This page will set a new cookie called dvwaSession each time the button is clicked.<br />
+		Trang này sẽ tạo cookie mới là dvwaSession mỗi khi bạn nhấn nút.<br />
 	</p>
 	<form method="post">
-		<input type="submit" value="Generate" />
+		<input type="submit" value="Tạo" />
 	</form>
 $html
 

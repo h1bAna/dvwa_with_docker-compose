@@ -15,7 +15,7 @@ if( isset( $_SESSION [ 'id' ] ) ) {
 		$last  = $row["last_name"];
 
 		// Feedback for end user
-		$html .= "<pre>ID: {$id}<br />First name: {$first}<br />Surname: {$last}</pre>";
+		$html .= "<pre>ID: {$id}<br />Tên: {$first}<br />Họ: {$last}</pre>";
 	}
 
 	((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);		

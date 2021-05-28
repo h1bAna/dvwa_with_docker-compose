@@ -43,13 +43,13 @@ $page[ 'body' ] .= <<<EOF
 EOF;
 
 $page[ 'body' ] .= "
-	<h2>More Information</h2>
+	<h2>Tìm hiểu thêm</h2>
 	<ul>
 		<li>" . dvwaExternalLinkUrlGet( 'https://content-security-policy.com/', "Content Security Policy Reference" ) . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP', "Mozilla Developer Network - CSP: script-src") . "</li>
 		<li>" . dvwaExternalLinkUrlGet( 'https://blog.mozilla.org/security/2014/10/04/csp-for-the-web-we-have/', "Mozilla Security Blog - CSP for the web we have" ) . "</li>
 	</ul>
-	<p><i>Module developed by <a href='https://twitter.com/digininja'>Digininja</a>.</i></p>
+	<p><i>Module được phát triển bởi <a href='https://twitter.com/digininja'>Digininja</a>.</i></p>
 </div>\n";
 
 dvwaHtmlEcho( $page );
